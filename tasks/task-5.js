@@ -10,24 +10,24 @@ const deliveryCountry = prompt ('Укажите страну доставки');
 if(deliveryCountry === null) {
     alert('Отменено пользователем!');
 } else {
-    switch(deliveryCountry.toUpperCase()) {
-        case 'КИТАЙ':
+    switch(deliveryCountry.toLowerCase()) {
+        case 'китай':
             alert(`Доставка в ${deliveryCountry} будет стоить ${priceChina} кредитов`);
             break;
 
-        case 'ЧИЛИ':
+        case 'чили':
             alert(`Доставка в ${deliveryCountry} будет стоить ${priceChile} кредитов`);
             break;
 
-        case 'АВСТРАЛИЯ':
+        case 'австралия':
             alert(`Доставка в ${deliveryCountry} будет стоить ${priceAustralia} кредитов`);
             break;
             
-        case 'ИНДИЯ':
+        case 'индия':
             alert(`Доставка в ${deliveryCountry} будет стоить ${priceIndia} кредитов`);
             break;
 
-        case 'ЯМАЙКА':
+        case 'ямайка':
             alert(`Доставка в ${deliveryCountry} будет стоить ${priceJamaica} кредитов`);
             break;
     }
